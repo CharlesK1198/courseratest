@@ -3,13 +3,45 @@
 <head>
 	<meta charset="utf8">
 	<title>Testing html5</title>
+<link rel="stylesheet" href="style.css">
 <style>
-article, li	{
+nav li {
+	list-style: none;
+}
+nav a:link, a:visited {
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	border: 2px solid red;
+	display: block;
+	text-align: center;
+	margin-bottom: 5px;
+	width: 150px
+}
+nav a:hover, a:active {
+	background-color: white;
+	color: black;
+}
+nav li:nth-child(3) {
+	font-size: 20px;
+}
+nav:hover li:nth-child(2) {
+	font-size: 30px;
+}
+article li	{
 	color: green;
 }
 section	{
 	color: orange;
 	font-size: 18;
+}
+article li:nth-child(odd) {
+	background-color: orange;
+	width: 200px
+}
+article li:nth-child(3):hover {
+	background-color: purple;
+	cursor: pointer;
 }
 </style>
 </head>
@@ -17,9 +49,11 @@ section	{
 	<header>
 		Christian Rossi testing html5.
 	<nav> 
-		<a href="autest.html">Home</a>
-		<a href="Info.html">Info</a>
-		<a href="Contacts.html">Contacts</a>
+		<ul class="Nav">
+			<li><a href="autest.html">Home</a></li>
+			<li><a href="Info.html">Info</a></li>
+			<li><a href="Contacts.html">Contacts</a></li>
+		</ul>
 	</nav>
 	</header>
 	<h1>
@@ -28,11 +62,12 @@ section	{
 	<section>
 		First section of articles
 		<br>
-		<a href="https://google.com" target="_blank" title="Tom Brady leaves gisele"><article>Tom Brady leaves Gisele</article></a>
+		<a href="https://google.com" target="_blank" title="Tom Brady leaves gisele">Tom Brady leaves Gisele</a>
+		<article>
 		<ul>
 			<li>He wants to play</li>
 			<li>He's too good to retire</li>
-			<li>He has
+			<li>He has</li>
 				<ul>
 					<li>Good teammates</li>
 					<li>Great throwing skills</li>
@@ -40,6 +75,7 @@ section	{
 				</ul>
 			<li>A bitchy wife</li>
 		</ul>
+		</article>
 		<br>
 		<article>Tom Brady gets with Julian Edelman</article>
 		End of first section
@@ -48,13 +84,13 @@ section	{
 	<section>
 		Second section
 		<br>
-		<article>Why?</article>
+		<article>
 		<ol>
 			<li>Fuck them kids</li>
 			<li>He needs space or he will kiss them to death</li>
 			<li>Annoying wife</li>
 				<ol>
-					<li>High-maintenance</li>
+					<li style="color: red; font-size: 20px;">High-maintenance</li>	<!-- Style in the line -->
 					<li>Stupid</li>
 						<ul>
 							<!-- Insert text characters not supported in html or certain encodings(&, >, <, ") -->
@@ -66,6 +102,7 @@ section	{
 				</ol>
 			<li>Why not? (Haaland's voice)</li>
 			</ol>
+		</article>
 		<br>
 		<article>Nobody knows</article>
 		End of second section
