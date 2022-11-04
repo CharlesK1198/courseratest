@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Background and positioning</title>
+<style>
+* {
+	box-sizing: border-box;
+}
+#bg {
+	width: 1000px;
+	height: 1000px;
+	background: url(background.png) no-repeat top pink;
+}  
+h2 {
+	margin-top: 100px;
+	border: 5px solid pink;
+	text-align: center;
+	width: 1000px;
+	font-size: 25px;
+}
+div {
+	background-color: #00FFFF;
+}
+p.first {
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+}
+#p1 {
+	background-color: #A52A2A;
+	float: left;
+	height: 150px;
+	width: auto
+}
+#p2 {
+	background-color: #DEB887;
+	float: right;
+	height: 100px;
+	width: auto;
+}
+#p3 {
+	background-color: #5F9EA0;
+	clear: both;
+	width: auto;
+	float: left;
+}
+#p4 {
+	background-color: #FF7F50;
+	width: auto;
+	clear: left;
+	float: left;
+}
+section {
+	clear: left;
+}
+#p1bis {
+	/*background-color: #A52A2A;*/
+}
+#p2bis {
+	/*background-color: #DEB887;*/
+}
+p.par2 {
+	width: 50%;
+	/*border: 1px solid black;*/
+	float: left;
+	height: auto;
+	padding: 10px;
+}
+</style>
+</head>
+<body>
+	<h1>The Background Property</h1>
+	<div id="bg">Background properties are fun!</div>
+	<h2>Gimme all the floating elements</h2>
+		<div>
+			<p class="first" id="p1">Paragraph1</p>
+			<p class="first" id="p2">Paragraph2</p>
+			<p class="first" id="p3">Paragraph3</p>
+			<p class="first" id="p4">Paragraph4</p>
+			<section>This is regular content continuing after the paragraph boxes.</section>
+		</div>
+	<h2>Two column design</h2>
+		<div style="background-color: white;">
+			<p class="par2" id="p1bis">Endeavor bachelor but add eat pleasure doubtful sociable. Age forming covered you entered the examine. Blessing scarcely confined her contempt wondered shy. Dashwoods contented sportsmen at up no convinced cordially affection. Am so continued resembled frankness disposing engrossed dashwoods. Earnest greater on no observe fortune norland. Hunted mrs ham wishes stairs. Continued he as so breakfast shameless. All men drew its post knew. Of talking of calling however civilly wishing resolve.</p>
+			<p class="par2" id="p2bis">Death there mirth way the noisy merit. Piqued shy spring nor six though mutual living ask extent. Replying of dashwood advanced ladyship smallest disposal or. Attempt offices own improve now see. Called person are around county talked her esteem. Those fully these way nay thing seems.</p>
+			<section> This is regular content continuing after the paragraph boxes 2.</section>
+		</div>
+</body>
+</html>
